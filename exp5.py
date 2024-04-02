@@ -1,6 +1,8 @@
-string = (input("Enter your sentence: \n"))
-count = 0
-for i in range (0, len(str)):
-    if(string[i] !=''):
-        count = count + 1;
-print ("Total no. of characters are ", +str(count));
+n=input("Enter the String: ").lower()
+s={}
+for i in n:
+    if i in s:
+        s[i]+=1
+    else:
+        s[i]=1
+print(s)
